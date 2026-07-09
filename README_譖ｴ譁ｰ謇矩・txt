@@ -1,0 +1,12 @@
+GitHub Pages 更新手順
+
+1. このZIPを解凍します。
+2. 中にあるファイル・フォルダをすべてコピーします。
+   ※ .git フォルダはコピーしません。
+3. GitHub Desktopで管理している iwate-aoiro フォルダへ貼り付けて上書きします。
+4. GitHub Desktopを開きます。
+5. 左下の Summary に「Contact見出し改行修正」と入力します。
+6. Commit to main を押します。
+7. 上部の Push origin を押します。
+
+重要：Pull origin は押さないでください。競合が出た場合は Abort merge を押してください。
