@@ -1,0 +1,39 @@
+岩手県青色申告会連合会 ホームページ仮公開手順
+
+【このフォルダに入っているもの】
+index.html          トップページ本体
+style.css           デザイン設定
+hero-iwatesan.jpg   トップ画像
+.nojekyll           GitHub Pages用設定ファイル
+
+【GitHub Pagesで公開する手順】
+1. GitHub Desktopを開く
+2. File → New repository をクリック
+3. Repository name に「iwate-aoiro」と入力
+4. Local Path はデスクトップなど分かりやすい場所を選ぶ
+5. Create repository をクリック
+6. このフォルダ内のファイルをすべて「iwate-aoiro」フォルダへコピー
+7. GitHub Desktopに戻る
+8. Summary に「first upload」と入力
+9. Commit to main をクリック
+10. 右上の Publish repository をクリック
+11. Private のチェックを外す
+12. Publish repository をクリック
+13. ブラウザでGitHubを開き、iwate-aoiro のページを開く
+14. Settings → Pages を開く
+15. Source を「Deploy from a branch」にする
+16. Branch を「main」、フォルダを「/root」にして Save
+17. 2〜3分待つ
+18. https://アカウント名.github.io/iwate-aoiro/ で確認
+
+【更新する手順】
+1. index.html または style.css を修正
+2. VS Codeで保存
+3. GitHub Desktopを開く
+4. Summary に修正内容を書く（例：トップ画像を修正）
+5. Commit to main をクリック
+6. Push origin をクリック
+7. 1〜3分後に公開ページが更新されます
+
+【スマホで確認する方法】
+公開されたURLをスマホに送って、SafariまたはChromeで開くだけです。
