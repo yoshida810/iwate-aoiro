@@ -277,3 +277,55 @@ img, svg{
     padding:0 16px;
   }
 }
+
+
+/* Ver2.2 contact mobile fix: keep Contact card inside the screen */
+.contact-title span{display:inline;}
+@media(max-width:680px){
+  .contact{
+    padding:52px 0 64px;
+  }
+  .contact-inner{
+    width:calc(100% - 32px);
+    padding:42px 18px 46px;
+    border-radius:22px;
+    overflow:hidden;
+  }
+  .contact-title{
+    max-width:100%;
+    margin:8px auto 18px;
+    font-size:clamp(27px,7.2vw,31px) !important;
+    line-height:1.36 !important;
+    letter-spacing:.005em !important;
+    text-align:center;
+    white-space:normal !important;
+    word-break:keep-all;
+    overflow-wrap:normal;
+  }
+  .contact-title span{
+    display:block;
+    white-space:nowrap;
+  }
+  .contact p{
+    max-width:100%;
+    font-size:16px;
+    line-height:1.85;
+    word-break:normal;
+    overflow-wrap:anywhere;
+  }
+  .phone{
+    font-size:clamp(36px,10.2vw,44px);
+    white-space:nowrap;
+  }
+  .contact address{
+    font-size:15px;
+    line-height:1.9;
+    word-break:normal;
+    overflow-wrap:anywhere;
+  }
+}
+@media(max-width:390px){
+  .contact-inner{width:calc(100% - 28px);padding-left:16px;padding-right:16px;}
+  .contact-title{font-size:26px !important;}
+  .phone{font-size:38px;}
+}
