@@ -65,3 +65,20 @@ a{text-decoration:none;color:inherit}
 .btn,.benefit-grid article,.support-grid article,.area-buttons a{transition:transform .25s ease,box-shadow .25s ease,border-color .25s ease}
 .btn:hover,.benefit-grid article:hover,.support-grid article:hover,.area-buttons a:hover{transform:translateY(-3px);box-shadow:0 18px 34px rgba(21,120,200,.15);border-color:#b8e2f8}
 .hero:after{content:"";position:absolute;left:0;right:0;bottom:0;height:120px;background:linear-gradient(180deg,rgba(255,255,255,0),#fff);pointer-events:none}
+
+
+/* Stable restore: contact title wrap fix only */
+.contact h2{
+  display:flex;
+  justify-content:center;
+  gap:.08em;
+  flex-wrap:wrap;
+  max-width:100%;
+  line-height:1.35;
+  word-break:keep-all;
+}
+.contact h2 span{white-space:nowrap;}
+@media(max-width:680px){
+  .contact h2{display:block;font-size:30px;}
+  .contact h2 span{display:block;}
+}
