@@ -1,1 +1,43 @@
 :root{--blue:#0068b7;--deep:#004b86;--sky:#eaf7ff;--pale:#f7fbff;--orange:#ff9f1c;--text:#1f2f3f;--muted:#66788a;--line:#d8e9f7;--white:#fff}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:"Noto Sans JP","Hiragino Kaku Gothic ProN",Meiryo,sans-serif;color:var(--text);background:var(--pale);line-height:1.78;letter-spacing:.01em}a{text-decoration:none;color:inherit}.container{width:min(1120px,calc(100% - 40px));margin-inline:auto}.site-header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.95);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}.header-inner{height:78px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{display:flex;align-items:center;gap:14px}.brand-mark{width:48px;height:48px;display:grid;place-items:center;border-radius:14px;background:linear-gradient(135deg,#0088d8,var(--deep));color:#fff;font-size:24px;font-weight:800;box-shadow:0 10px 24px rgba(0,104,183,.22)}.brand strong{display:block;color:var(--deep);font-size:18px;line-height:1.2}.brand small{display:block;color:var(--muted);font-size:11px}.nav{display:flex;gap:24px;color:#063e71;font-weight:700;font-size:14px}.nav a{position:relative}.nav a::after{content:"";position:absolute;left:0;bottom:-8px;width:0;height:2px;background:var(--orange);transition:.25s}.nav a:hover::after{width:100%}.hero{position:relative;min-height:690px;background:url("../images/hero-iwatesan.jpg") center/cover no-repeat;display:grid;align-items:center}.hero-overlay{position:absolute;inset:0;background:linear-gradient(90deg,rgba(255,255,255,.86) 0%,rgba(255,255,255,.68) 36%,rgba(255,255,255,.18) 68%,rgba(255,255,255,.05) 100%)}.hero-inner{position:relative;display:grid;grid-template-columns:1.15fr .85fr;gap:56px;align-items:center}.eyebrow,.label{margin:0 0 10px;color:#008bd2;font-weight:800;letter-spacing:.03em}.hero-copy h1{margin:0 0 22px;color:var(--deep);font-size:clamp(38px,5.4vw,66px);line-height:1.22;letter-spacing:.015em}.hero-copy p{font-size:18px;max-width:640px}.hero-actions{display:flex;flex-wrap:wrap;gap:14px;margin-top:28px}.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 24px;border-radius:999px;font-weight:800;transition:.25s}.btn:hover{transform:translateY(-2px)}.btn-primary{background:linear-gradient(135deg,#0088d8,var(--blue));color:#fff;box-shadow:0 14px 28px rgba(0,104,183,.25)}.btn-white{background:#fff;color:var(--deep);border:1px solid var(--line)}.btn-outline{border:1px solid var(--line);color:var(--deep);background:#fff}.glass-card{background:rgba(255,255,255,.88);border:1px solid rgba(255,255,255,.75);border-radius:28px;padding:34px;box-shadow:0 24px 60px rgba(0,58,105,.16);backdrop-filter:blur(10px)}.glass-card h2{margin:0 0 18px;color:var(--deep);font-size:22px}.glass-card dt{color:var(--muted);font-size:13px;font-weight:800}.glass-card dd{margin:0 0 16px;font-weight:700}.section{padding:70px 0}.split{display:grid;grid-template-columns:1.25fr .75fr;gap:34px}.section-head{margin-bottom:24px}.section-head h2,.about-card h2,.area-panel h2,.contact-panel h2{margin:0;color:var(--deep);font-size:clamp(28px,3.2vw,40px);line-height:1.35}.row{display:flex;align-items:end;justify-content:space-between;gap:20px}.center{text-align:center}.text-link{color:var(--blue);font-weight:800}.news-list{background:#fff;border:1px solid var(--line);border-radius:24px;overflow:hidden;box-shadow:0 14px 34px rgba(2,68,120,.05)}.news-list article{display:grid;grid-template-columns:130px 1fr;gap:18px;padding:18px 22px;border-bottom:1px solid var(--line);font-weight:700}.news-list article:last-child{border-bottom:0}.news-list time{color:var(--blue);font-weight:800}.about-card,.area-panel,.contact-panel{background:#fff;border:1px solid var(--line);border-radius:28px;padding:34px;box-shadow:0 14px 34px rgba(2,68,120,.06)}.benefit-section{background:linear-gradient(180deg,#fff,var(--sky))}.benefit-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:14px}.benefit-card{min-height:260px;background:#fff;border:1px solid var(--line);border-radius:22px;padding:28px 18px;text-align:center;display:flex;flex-direction:column;align-items:center;box-shadow:0 12px 28px rgba(0,104,183,.06);transition:.25s}.benefit-card:hover{transform:translateY(-6px);box-shadow:0 18px 38px rgba(0,104,183,.14)}.icon{width:68px;height:68px;border-radius:20px;display:grid;place-items:center;margin-bottom:20px;color:var(--blue);font-size:30px;font-weight:800;background:linear-gradient(180deg,#edfaff,#dff4ff);border:1px solid #bae4ff}.benefit-card h3{min-height:58px;margin:0 0 12px;color:#032f57;font-size:16px;line-height:1.55;font-weight:800;display:flex;align-items:center;justify-content:center;word-break:keep-all}.benefit-card p{margin:0;color:var(--muted);font-size:13px}.area-panel{display:flex;align-items:center;justify-content:space-between;gap:24px;background:linear-gradient(135deg,#fff,#eef9ff)}.contact-cta{text-align:center}.contact-panel{max-width:760px}.phone{display:inline-block;margin:12px 0;color:var(--blue);font-size:36px;font-weight:800}.footer{background:#003f73;color:#fff;padding:30px 0}.footer-inner{display:flex;justify-content:space-between;align-items:end;gap:20px}.footer p{margin:0}.footer small{opacity:.8}.page-hero{padding:90px 0;background:linear-gradient(135deg,#eaf7ff,#fff)}.page-hero h1{margin:0;color:var(--deep);font-size:44px}.content-card{background:#fff;border:1px solid var(--line);border-radius:28px;padding:36px;box-shadow:0 14px 34px rgba(2,68,120,.06)}.simple-list{padding-left:1.2em}.simple-list li{margin:.5em 0}.map-note{background:var(--sky);border-radius:20px;padding:22px;margin-top:22px}@media (max-width:1000px){.benefit-grid{grid-template-columns:repeat(3,1fr)}.hero-inner,.split{grid-template-columns:1fr}.glass-card{max-width:520px}}@media (max-width:760px){.container{width:min(100% - 28px,1120px)}.header-inner{height:auto;padding:14px 0;align-items:flex-start;flex-direction:column}.nav{width:100%;overflow-x:auto;gap:18px;padding-bottom:6px;white-space:nowrap}.hero{min-height:auto;padding:74px 0}.hero-overlay{background:rgba(255,255,255,.78)}.hero-copy h1{font-size:38px}.benefit-grid{grid-template-columns:repeat(2,1fr)}.news-list article{grid-template-columns:1fr;gap:4px}.area-panel,.footer-inner{display:block}.phone{font-size:30px}}@media (max-width:460px){.benefit-grid{grid-template-columns:1fr}.brand strong{font-size:16px}.brand small{display:none}}
+
+
+/* 2026-07-09: 見出しの不自然な1文字改行を防ぐ調整 */
+.section-head h2,
+.about-card h2,
+.area-panel h2,
+.contact-panel h2,
+.content-card h2,
+.page-hero h1{
+  word-break: keep-all;
+  overflow-wrap: normal;
+  text-wrap: balance;
+}
+
+.contact-title{
+  max-width: 100%;
+  margin-inline: auto;
+  text-align: center;
+  line-height: 1.35;
+}
+
+.contact-title span{
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.contact-title span + span{
+  margin-left: .25em;
+}
+
+.contact-detail{
+  text-align: center;
+}
+
+@media (max-width:760px){
+  .contact-title span{
+    display:block;
+  }
+  .contact-title span + span{
+    margin-left:0;
+  }
+}
