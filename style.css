@@ -67,18 +67,26 @@ a{text-decoration:none;color:inherit}
 .hero:after{content:"";position:absolute;left:0;right:0;bottom:0;height:120px;background:linear-gradient(180deg,rgba(255,255,255,0),#fff);pointer-events:none}
 
 
-/* Stable restore: contact title wrap fix only */
-.contact h2{
-  display:flex;
-  justify-content:center;
-  gap:.08em;
-  flex-wrap:wrap;
-  max-width:100%;
-  line-height:1.35;
-  word-break:keep-all;
+/* Ver1.0 stable fix: Contact見出しの1文字改行防止 */
+.contact-inner{
+  width:min(1040px, calc(100% - 44px));
+  margin-left:auto;
+  margin-right:auto;
 }
-.contact h2 span{white-space:nowrap;}
+.contact h2{
+  display:block;
+  width:100%;
+  max-width:none;
+  white-space:nowrap;
+  word-break:keep-all;
+  overflow-wrap:normal;
+  line-break:strict;
+  text-align:center;
+}
 @media(max-width:680px){
-  .contact h2{display:block;font-size:30px;}
-  .contact h2 span{display:block;}
+  .contact h2{
+    white-space:normal;
+    font-size:clamp(28px,7.4vw,34px);
+    line-height:1.45;
+  }
 }
